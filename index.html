@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&display=swap" rel="stylesheet">
+    <title>Clínica Médica Bem-Estar | Formulário de Consulta</title>
+</head>
+<body>
+    <main>
+        <div class="parte-1">
+            <img src="./imagens/logo-clinica1.png" alt="">
+            <h1>Clínica Médica <br>Bem-Estar</h1>
+        </div>
+        <div class="formulario">
+        <div class="aviso">
+            <img src="./imagens/logo-aviso.png" alt="">
+            <p>Preencha o formulário e entraremos em contato com você em até <strong>24 horas</strong>  via WhatsApp e E-mail.</p>
+        </div>
+            <br>
+        <h2>Agendamento de Consulta</h2>
+        <form action="">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <div class="box">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="box">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu endereço de E-mail" required>
+                </div>
+
+                <div class="box">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" placeholder="Digite seu telefone" required>
+                </div>
+
+                <div class="box">
+                <label for="especialidade">Especialidade médica:</label>
+                <select name="especialidade" id="especialidade">
+                    <option value="">Selecione a especialidade médica</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="ginecologia">Ginecologia</option>
+                </select>
+                </div>
+
+                <div class="box">
+                    <label for="number">Idade:</label>
+                    <input type="number" id="number" required>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferência de Horário</legend>
+
+                <div class="box">
+                <label for="date">Data Preferencial:</label>
+                <input type="date" id="date" required>
+                </div>
+                
+                <div class="box">
+                <label for="time">Horário Preferencial:</label>
+                <input type="time" id="time" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="mensagem">
+                <legend>Observações Adicionais</legend>
+                <textarea name="observacao" id="observacao" cols="78" rows="10"></textarea>
+            </fieldset>
+            <br> <br>
+            <input type="submit" id="enviar">
+        </div>
+        </form>
+    </main>
+</body>
+</html>
